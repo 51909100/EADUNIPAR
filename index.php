@@ -1,95 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>  
-           <title>  ATIVIDADE REFLEXIVA </title> 
-            <meta charset="utf-8"/>     <!--ISSO É PARA APARECER CARACTER CORRETO--> 
-      <link rel="stylesheet" type="text/css" href="estilosar.css">
-      <link rel="stylesheet" type="text/css" href=" .css">
-      
-   </head>
+               <title>  ATIVIDADE REFLEXIVA </title> 
+                <meta charset="utf-8"/>     <!--ISSO É PARA APARECER CARACTER CORRETO--> 
+                    <link rel="stylesheet" type="text/css" href="estilosar.css"
+                    <script language="javascript" type="text/javascript">
+<script language="javascript" type="text/javascript">
+        function validacao () {
+            var nome = reflexiva.nome.value;
+            var email = reflexiva.email.value;
+            var endereco =reflexiva.endereco.value;
+            var bairro = reflexiva.bairro.value;
+            var telefone=reflexiva.telefone.value;
+            var cidade =reflexiva.cidade.value;
 
- <body bgcolor="#0000FF">  
-            
-            <div class="cabecalho">
-                
-            <img src="logo.jpg" alt="ANALISE DESENVOLVIMENTO SISTEMAS" title="LOGO" vspace="2px" hspace="3px" border="3px" align="left"> 
+            if (nome =="" || email=="" || endereco=="" ||bairro=="" ||telefone==""||cidade==""){
+                alert ("PREENCHA TODOS OS CAMPOS OBRIGATORIAMENTE");
+                reflexiva.nome.focus();
+                return false
+                     
+         }     
+         
+            }
+</script>
+</head>
+ <body bgcolor=#3104B4 > 
 
-        <h2>  <STRONG> <center>  FUNDAMENTOS DE PROGRAMAÇÃO INTERNET <BR> ATIVIDADE REFLEXIVA -
-                             FORMULÁRIO DE CADASTRO </h2> 
-</center>
-                            
-            </div>
-       <form action="#" method="post">
-    <fieldset bgcolor="#22222" <strong> 
-
-            <h4> <center> <legend>PREENCHA O FORMULÁRIO ABAIXO E CLIQUE EM ENVIAR</legend></h4></center>
-                    <div class="grupo">
-                    <div class="campo">
-                     <label for="nome">Nome Completo</label> 
-                        <input type="text" id="nome" name="nome" style= "width: 40em" value="" placeholder="Digite seu nome">          
-                        
-                    </label>
-                        <div class="campo">  <br>                
-                     <label>Sexo</label>
-                     <input type="radio" name="sexo" value="masculino"> Masculino <br>
-                        <input type="radio" name="sexo" value="masculino"> Feminino   <br>           
-                    </div>  
-                    </label>
-                <div class="campo">
-                    <label for="nome">Endereço</label>
-                    <input type="text" id="Endereço" name="Endereço" style="width: 60em" value="" placeholder="Digite seu endereço completo">
-                </div> 
-                </div>  
-                    </label>
-                <div class="campo">
-                    <label for="nome">Bairro</label>
-                    <input type="text" id="Endereço" name="Endereço" style="width: 60em" value="" placeholder="Digite aqui nome do seu bairro">  <br>
-                </div>                 
-                </div>
-                <div class="campo">
-                    <label for="email">E-mail</label>
-                    <input type="text" id="email" name="email" style="width: 60em" value="" placeholder="Digite seu E-mail">
-                </div>
-                <div class="campo">
-                    <label for="telefone">Telefone</label>
-                    <input type="text" id="telefone" name="telefone" style="width: 20em" value="" placeholder="Digite seu Telefone">
-                </div>            
-                 <div class="grupo">
-                <div class="campo">
-                    <label for="cidade">Cidade</label>
-                    <input type="text" id="cidade" name="cidade" style="width: 20em" value="" placeholder="SUA CIDADE E ESTADO">
-                </div>
-                <div class="campo">
-                    <label for="estado">Estado</label>
-                    <select name="estado" id="estado">
-                        <option value="">--</option>
-                        <option value="MS,">MS</option>
-                        <option value="SC,">SC</option>
-                        <option value="MG,">MG</option>
-                        <option value="PR,">PR</option>
-                        <option value="SP,">SP</option>
-                        <option value="GO,">GO</option>
-                        <option value="RJ,">RJ</option>
-                        </select>
-                     </div>
-        
-<center>        <div class="campo"><br>
-            <label for="mensagem">REFERÊNCIAS</label>
-            <input type="text" id="nome" name="nome" style= "width: 60em" value="" placeholder="DIGITE AQUI- CASO DESEJE INSERIR MAIS INFORMAÇÕES CLIQUE NA BARRA ABAIXO">
+                        <div class="cabecalho">
+                                <img src="logo.jpg" alt="ANALISE DESENVOLVIMENTO SISTEMAS" title="LOGO" vspace="7px" 
+                                hspace="30px" border="7px" align="left"> <br> 
+                                 
+                        <h2>  <STRONG> <center> FUNDAMENTOS DE PROGRAMAÇÃO INTERNET <BR> ATIVIDADE REFLEXIVA -
+                                     FORMULÁRIO DE CADASTRO </h2> </center>
+                                    
+                        </div>
+         
+         <fieldset> 
+            <img src="cursotela.jpg" alt="curso" title="LOGO" vspace="7px" 
+                                hspace="30px" border="7px" align="left"> <br><Br>
+ <strong> <h2> <center> <legend>PREENCHA O FORMULÁRIO <br> ABAIXO E CLIQUE EM ENVIAR</legend></h2></center>
            
-             <div class="botao"><br>
-            <button type="submit" name="submit">Enviar</button>
-         </div>
-    </fieldset>
-</form>
-
+           <form name="reflexiva" action="#" method="post" onsubmit= "return validacao( );">
+               
+                            <div class="grupo">
+                                <div class="campo">
+                                    Nome:<input type="text" id="nome" name="nome" style= "width: 90em"  placeholder="Digite seu nome">
+                               <div class="campo">                 
+                                Sexo:<br><input type="radio" name="sexo" value="masculino"> Masculino <br>
+                                    <input type="radio" name="sexo" value="masculino"> Feminino   <br>           
+                            </div> 
+                                    <div class="campo">
+                                    Endereço:<input type="text" id="endereco" name="endereco" style="width: 90em" value="" placeholder="Digite seu endereço completo">
+                                </div> 
+                                  
+                                 <div class="campo">
+                                    Bairro: <input type="text" id="Bairro" name="bairro" style="width: 90em" value="" placeholder="Digite aqui nome do seu bairro">  <br>
+                                 </div>                 
+                                <div class="campo">
+                                    Email: <input type="text" id="email" name="email" style="width: 90em" value="" placeholder="Digite seu E-mail">
+                                </div>
+                            <div class="campo">
+                                Telefone: <input type="text" id="telefone" name="telefone" style="width: 90em" value="" placeholder="Digite seu Telefone">
+                            </div>  
+                         <div class="grupo">
+                            <div class="campo">
+                                Cidade: <input type="text" id="cidade" name="cidade" style="width: 90em" value="" placeholder="SUA CIDADE E ESTADO">
+                            </div>
+                         </div>
+                        <div class="campo">
+                            Estado: <select name="estado" id="estado">
+                                <option value="">--</option>
+                                <option value="MS,">MS</option>
+                                <option value="SC,">SC</option>
+                                <option value="MG,">MG</option>
+                                <option value="PR,">PR</option>
+                                <option value="SP,">SP</option>
+                                <option value="GO,">GO</option>
+                                <option value="RJ,">RJ</option>
+                                </select>
+                        </div>
+                       REFERÊNCIAS PESSOAIS: <br> <textarea rows="05" cols="20" maxlength="100"></textarea><Br> CASO DESEJE INSERIR MAIS INFORMAÇÕES CLIQUE ADICIONAR CAMPOS ANTES DE ENVIAR "OBRIGADO" <br>
+                             
+                   
 </body>
 
 </html>
-</center>
-
-
-<div class="adicionarcampo"> <center>
 <html>
 <head>
 <script type="text/javascript">
@@ -186,26 +181,20 @@ var campoValor = document.getElementById("arq"+id).value;
 for (iLoop = 1; iLoop <= totalCampos; iLoop++) {
         document.write("<span id='linha"+iLoop+"' style='display:none'> INFORMAÇÕES ADCIONAIS "+iLoop+": <input type='text' id='arq"+iLoop+"' name='arq"+iLoop+"'> <input type='button' value='Remover' onclick='RemoverCampos(\""+iLoop+"\")'></span>");
 }
-
-
 </script>
-<input type="button" value="Se deseja enviar mais informações clique aqui" onclick="AddCampos()">
+
+<input type="button" value="Adicionar campos" onclick="AddCampos()">
 <br>
 <!--
 Atenção!!! No código fonte, altere o "text" do campo abaixo para "hidden": -->
-<br><br><input type="hidden" name="hidden1" id="hidden1">
+<br><input type="hidden" name="hidden1" id="hidden1">
 <br> <!--Esse campo do tipo "hidden" irá passar a id dos campos que foram criados. Na página ASP ou PHP (ou outra linguagem server-side) você poderá dar um split para recuperar o valor dos campos que foram passados! -->
-
-
 <input type="hidden" name="hidden2" id="hidden2">
 </form>
-
+<button type="submit" name="submit">Enviar</button>
 </body>
 </html>
-</fieldset>
 
-</form>
-</body>
-</div>
-</center>
-</html>
+
+
+
